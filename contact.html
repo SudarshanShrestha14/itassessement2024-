@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" alt="Name input field"><br>
+            <span id="nameError" class="error"></span><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" alt="Email input field"><br>
+            <span id="emailError" class="error"></span><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" alt="Message input area"></textarea><br>
+            <span id="messageError" class="error"></span><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <footer>
+        <p>My Portfolio | Anamnagar, Kathmandu</p>
+        <div class="social-links">
+            <p>Email: <a href="sudarshanshresthaprofessional@gmail.com">sudarshanshresthaprofessional@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/SudarshanShrestha14" target="_blank">SudarshanShrestha14</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
